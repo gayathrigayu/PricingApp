@@ -1,0 +1,202 @@
+@import '../../../styles.scss';
+
+.pricing-table {
+    overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+    height: 550px; /* gives an initial height of 200px to the table */
+  }
+//   .pricing-table thead th {
+//     position: sticky; /* make the table heads sticky */
+//     top: 0px; /* table head will be placed from the top of the table and sticks to it */
+//     background: $white;
+//     padding-bottom: 20px;
+//   }
+  table {
+    border-collapse: collapse; /* make the table borders collapse to each other */
+    width: 100%;
+  }
+.center-width{
+    .heading1{
+        font-size: 42px;
+        max-width: 80%;
+        @media only screen and (max-width: $small) {
+            max-width: 100%;
+            font-size: 32px;
+          }
+    }
+
+    font-family: "Work Sans",sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+    .table-heading1{
+        font-size: 40px;
+        line-height: 44px;
+        word-wrap: break-word;
+        padding: 20px 20px 20px 0px;
+        text-align: left;
+        @media only screen and (max-width: $small) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+    th {
+        text-align: left;
+        font-size: 28px;
+        line-height: 1.4em;
+        @media only screen and (max-width: $small) {
+            font-size: 21px;
+            line-height: 26px;
+            padding-right: 20px;
+        }
+        .months-title{
+            color: $coral;
+            text-align: center;
+        }
+    }
+    tr th:first-child {
+        width: 460px;
+    }
+    td{
+        font-size: 20px;
+        line-height: 1.6em;
+        padding: 20px 20px 20px 0;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        &:first-child{
+            text-align: left;
+            width: 40%;
+        }
+        i{
+            padding-left: 20px
+        }
+        .scope-name {
+            width: 80%;
+            display: inline-block;
+            @media only screen and (max-width: $small) {
+                width: 70%;
+                word-wrap: break-word;
+            }
+        }
+        
+        .scope-info {
+            display: contents;
+            @media only screen and (max-width: $small) {
+                width: 20%;
+            }
+        }
+        @media only screen and (max-width: $small) {
+            font-size: 18px;
+        }
+    }
+    .button{
+        background-color: $coral;
+        color: $black;
+        padding: 15px 30px;
+        border: none;
+        font-weight: 500;
+        transition: background-color .4s ease-in-out,color .4s ease-in-out;
+        margin-top: 20px;
+        font-size: 18px;
+        &:hover {
+            cursor: pointer;
+            background-color: $black;
+            color: $white;
+        }
+    }
+    .popuptext{
+        position: relative;
+        width: 60%;
+        background: #fff;
+        display: flex;
+        height: 20%;
+        @media only screen and (max-width: $small) {
+         width:100%;
+        }
+        .popup-content{
+            width: 100%;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+        .popup-panel {
+            position: absolute;
+            top: 0;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            border: 1px solid #ccc;
+            width: 100%;
+            background: rgb(46, 46, 46);
+            padding: 10px;
+            color: $white;
+            left: 30%;
+
+        }
+        .close-icon{
+            float: right;
+        }
+    }
+    .text-left {
+        max-width: 80%;
+        word-wrap: break-word;
+        justify-content: center;
+        text-align: left;
+        display: inline-block;
+        padding: 20px 20px 20px 0;
+        @media only screen and (max-width: $small) {
+            max-width: 100%;
+        }
+            
+    }
+    
+    .full-width {
+        display: block;
+        padding: 20px 20px 20px 0;
+    }
+    
+    .text-right {
+        display: inline-block;
+        .button{
+            min-width: 300px;
+            padding: 20px;
+        }
+    }
+    .currentlyactive{
+        background-color: $coral;
+        color: $white;
+    }
+    input[type="radio"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        font: inherit;
+        color: currentColor;
+        width: 22px;
+        height: 22px;
+        border: 0.15em solid currentColor;
+        border-radius: 50%;
+        transform: translateY(5px);
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      input[type="radio"]:checked::before {
+        content: "\f00c";
+        font-family: var(--fa-style-family, "Font Awesome 6 Free");
+        font-weight: var(--fa-style, 900);
+        font-size: 12px;
+        position: absolute;
+        top: -8px;
+        left: 3px;
+      }
+      label{
+        text-transform: capitalize;
+      }
+    .currency{
+        font-size: 18px;
+    }
+    .currency-amount{
+        font-size: 28px;
+    }
+}
+

@@ -1,0 +1,298 @@
+{
+    "record": [
+        {
+            "name": "System support & Maintenance",
+            "cost1": 678,
+            "cost2": 5678,
+            "cost3": 8900,
+            "list": [
+                {
+                    "name": "Performance testing",
+                    "scope": "Frequency",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Security testing",
+                    "scope": "Frequency",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 9,
+                    "price2": 29,
+                    "price3": 39
+                },
+                {
+                    "name": "Accessibility reviews",
+                    "variations1": "monthly",
+                    "variations2": "BiAnnually",
+                    "variations3": "Annualy",
+                    "price1": 5,
+                    "price2": 23,
+                    "price3": 44
+                },
+                {
+                    "name": "Carbon footprint reporting",
+                    "scope": "FrequDowntime, security reactions and hosting bug fixesency",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 23,
+                    "price2": 35,
+                    "price3": 60
+                },
+                {
+                    "name": "Management of essential system updates and minor code upgrades.",
+                    "scope": "Docker updates",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Devops maintenance",
+                    "scope": "Bug fixes/suggestion & integration of basic plugins & integrations/iframes & embeds",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 3,
+                    "price2": 4,
+                    "price3": 6
+                },
+                {
+                    "name": "Caching and CDN configuration and improvements",
+                    "scope": "setup with Nimbus or uptimerobot",
+                    "variations1": "Yearly",
+                    "variations2": "Halfearly",
+                    "variations3": "Annualy",
+                    "price1": 6,
+                    "price2": 9,
+                    "price3": 59
+                },
+                {
+                    "name": "Third party integration management",
+                    "scope": "Bug fixes/suggestion & integration of basic plugins & integrations/iframes & embeds",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                }
+            ]
+        },
+        {
+            "name": "Customer support",
+            "cost1": 5278,
+            "cost2": 66678,
+            "cost3": 79800,
+            "list": [
+                {
+                    "name": "Third party integration management",
+                    "scope": "Bug fixes/suggestion & integration of basic plugins & integrations/iframes & embeds",
+                    "variations1": "Basic",
+                    "variations2": "Advacned",
+                    "variations3": "Pro",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Telephone, email & Monday.com communication during working hours",
+                    "variations1": "monthly",
+                    "variations2": "Weekly",
+                    "variations3": "Daily",
+                    "price1": 9,
+                    "price2": 29,
+                    "price3": 39
+                },
+                {
+                    "name": "Account management sessions",
+                    "variations1": "monthly",
+                    "variations2": "BiAnnually",
+                    "variations3": "Annualy",
+                    "price1": 5,
+                    "price2": 23,
+                    "price3": 44
+                },
+                {
+                    "name": "Maintain status report",
+                    "scope": "Review and reporting meeting with client",
+                    "variations1": "Yearly",
+                    "variations2": "Quarterly",
+                    "variations3": "Halfyearly",
+                    "price1": 23,
+                    "price2": 35,
+                    "price3": 60
+                },
+                {
+                    "name": "Management of essential system updates and minor code upgrades.",
+                    "scope": "Docker updates",
+                    "variations1": "monthly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Technical support for CMS or internal admin users",
+                    "scope": "CMS user permission management/answering questions via tickets/video walkthroughs",
+                    "variations1": "Basic",
+                    "variations2": "Advanced",
+                    "variations3": "Pro",
+                    "price1": 3,
+                    "price2": 4,
+                    "price3": 6
+                }
+            ]
+        },
+        {
+            "name": "Product support",
+            "cost1": 6278,
+            "cost2": 678,
+            "cost3": 900,
+            "list": [
+                {
+                    "name": "API management",
+                    "scope": "Optimisations, keep documentation up to date on changes, tweaks to endpoint data, etc.",
+                    "variations1": "Basic",
+                    "variations2": "Advacned",
+                    "variations3": "Pro",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Bug fixes",
+                    "scope": "1-2 hours of dev time per month",
+                    "variations1": "N/A",
+                    "variations2": "N/A",
+                    "variations3": "N/A",
+                    "price1": 9,
+                    "price2": 29,
+                    "price3": 39
+                },
+                {
+                    "name": "Keep user guide up to date",
+                    "variations1": "N/A",
+                    "variations2": "N/A",
+                    "variations3": "N/A",
+                    "price1": 5,
+                    "price2": 23,
+                    "price3": 44
+                },
+                {
+                    "name": "CMS optimisations - assess improvements and suggest and implement necessary changes",
+                    "variations1": "Yearly",
+                    "variations2": "Quarterly",
+                    "variations3": "Halfyearly",
+                    "price1": 23,
+                    "price2": 35,
+                    "price3": 60
+                },
+                {
+                    "name": "Frontend changes and amendments to functionality ",
+                    "scope": "Basic frontend changes and amendments to design & functionality (no design input) Advanced frontend changes and amendments to design & functionality (design work included) Pro Design & build of totally new frontend pages & components (design work included)",
+                    "variations1": "Basic",
+                    "variations2": "Advanced",
+                    "variations3": "Pro",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Proactive test for fixes & upgrades for new browser releases",
+                    "scope": "CMS user permission management/answering questions via tickets/video walkthroughs",
+                    "variations1": "Yearly",
+                    "variations2": "Advanced",
+                    "variations3": "Pro",
+                    "price1": 3,
+                    "price2": 4,
+                    "price3": 6
+                }
+            ]
+        },
+        {
+            "name": "App support",
+            "cost1": 278,
+            "cost2": 6678,
+            "cost3": 7900,
+            "list": [
+                {
+                    "name": "Appstore/playstore management and consultation ",
+                    "scope": "Optimisations, keep documentation up to date on changes, tweaks to endpoint data, etc.",
+                    "variations1": "Basic",
+                    "variations2": "Advacned",
+                    "variations3": "Pro",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "iOS version upgrade testing and fixes",
+                    "scope": "review and test app, fix any issues",
+                    "variations1": "N/A",
+                    "variations2": "N/A",
+                    "variations3": "N/A",
+                    "price1": 9,
+                    "price2": 29,
+                    "price3": 39
+                },
+                {
+                    "name": "Android version upgrade and fixes",
+                    "scope": "review and test app, fix any issues",
+                    "variations1": "Yearly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 5,
+                    "price2": 23,
+                    "price3": 44
+                }
+            ]
+        },
+        {
+            "name": "Marketing support",
+            "cost1": 278,
+            "cost2": 6678,
+            "cost3": 7900,
+            "list": [
+                {
+                    "name": "Management of analytics integration (e.g. GA or hubspot) ",
+                    "scope": "inserting tag/creating custom events/analytics reports:Creation of custom event tracking (downloads, conversions etc) Analytics reports (including heatmap and user journey analysis) and suggestions for improvements",
+                    "variations1": "Basic",
+                    "variations2": "Advacned",
+                    "variations3": "Pro",
+                    "price1": 19,
+                    "price2": 39,
+                    "price3": 59
+                },
+                {
+                    "name": "Technical SEO support (working alongside Client's marketing team)",
+                    "scope": "rYoast updates/sitemap updates/URL changes & redirects",
+                    "variations1": "Yearly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 9,
+                    "price2": 29,
+                    "price3": 39
+                },
+                {
+                    "name": "Website Email integration configuration management (e.g. SendGrid or Mailchimp)",
+                    "variations1": "Yearly",
+                    "variations2": "Quarterly",
+                    "variations3": "Annualy",
+                    "price1": 5,
+                    "price2": 23,
+                    "price3": 44
+                }
+            ]
+        }
+    ]
+}

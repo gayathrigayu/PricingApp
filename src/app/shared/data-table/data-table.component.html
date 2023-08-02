@@ -1,0 +1,50 @@
+<div class="center-width">
+
+
+  <h1 class="heading1">Security, Performance, and Reliability - all in one package</h1>
+  <div class="full-width">
+    <div class="text-left"><h2 class="heading2">Need help getting started? Get a personalized recommendation.</h2></div>
+    <div class="text-right">
+      <button class="button button3">Get Started</button>
+    </div>
+  </div>
+<div class="pricing-table">
+  <div class="" *ngFor="let record of dataSource;let m = index;">
+  <div class="table-heading1">{{record.name}}</div>
+  <table >
+  <thead>
+      
+  </thead>
+  <tbody>
+       <tr *ngFor="let item of record.list;let i = index;">           
+        <td >
+          <div class="scope-name">{{item.name}}</div>
+          <div class="scope-info">
+          <ng-container *ngIf="item.scope">
+            <i class="fa fa-info-circle cursor-pointer" (click)="onPopupClick(i)" aria-hidden="true"></i>
+            <div *ngIf="selectedIndex == i" class="popuptext">
+              <div class="popup-panel">
+            <div class="fa fa-close cursor-pointer close-icon" (click)="onPopupClick(i , 'close')"></div>
+            <div> Scope </div>
+            <div class="popup-content" [innerHtml]="item.scope"></div>
+              </div>
+            </div>
+          </ng-container>
+          </div>
+        </td>
+         <td [ngClass]="{'currentlyactive': item.selectedVariation == item.variations1 && item.selectedVariationPrice == item.price1}">
+          <label>{{item.variations1}}</label><input type="radio" [value]="item.variations1" id="{{item.name}}" name="{{item.name}}" (change)="onVariationSelect(item.name, item.variations1, i , m , item.price1)" checked/>
+          <div><span class="currency">£</span><span class="currency-amount">{{item.price1}}</span></div>
+        </td>
+         <td [ngClass]="{'currentlyactive': item.selectedVariation == item.variations2 && item.selectedVariationPrice == item.price2}"><label>{{item.variations2}}</label><input type="radio" [value]="item.variations2" id="{{item.name}}" name="{{item.name}}" (change)="onVariationSelect(item.name, item.variations2, i, m, item.price2)"/>
+          <div><span class="currency">£</span><span class="currency-amount">{{item.price2}}</span></div>
+        </td>
+         <td [ngClass]="{'currentlyactive': item.selectedVariation == item.variations3 && item.selectedVariationPrice == item.price3}"><label>{{item.variations3}}</label><input type="radio" [value]="item.variations3" id="{{item.name}}" name="{{item.name}}" (change)="onVariationSelect(item.name, item.variations3, i, m, item.price3)"/>
+          <div><span class="currency">£</span><span class="currency-amount">{{item.price3}}</span></div>
+        </td>
+       </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
