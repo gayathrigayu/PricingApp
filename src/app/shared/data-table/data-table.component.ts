@@ -11,6 +11,7 @@ export class DataTableComponent implements OnInit{
   dataSource : any;
   headerTable : any;
   selectedIndex : any;
+  selectedParentIndex : any;
   selectedVariations : Array<any> = [];
 
   ngOnInit(): void {
@@ -29,39 +30,36 @@ export class DataTableComponent implements OnInit{
     console.log(id);
   }
 
-  onPopupClick(i : any , flag ?: string) {
+  onPopupClick(i : any , m : any , flag ?: string) {
     console.log('onclick = ' + i);
     if(flag){
       this.selectedIndex = undefined;
+      this.selectedParentIndex = m;
+      
     }
     else{
       this.selectedIndex = i;
+      this.selectedParentIndex = m;
     }
   }
   onVariationSelect(itemName : any, selectedValue : any, indexOfItem : any, parentindexOfItem : any, selectedValuePrice : any, ) {
 
-    /*const pushObj = {
-      'name' : itemName,
-      'value' : selectedValue
-    }
-    if(this.selectedVariations.length == 0) {
-      //push into the array
-      
-      this.selectedVariations.push(pushObj);
-    } else {
-      let anyFound = this.selectedVariations.find(element => element.name == itemName);
-      if(typeof anyFound !== 'undefined' && anyFound) {
-        //Replace value
-        const index = this.selectedVariations.findIndex((el) => el.name === itemName)
-        this.selectedVariations[index] = pushObj;
-      } else {
-        //push to the array
-        this.selectedVariations.push(pushObj);
-      }
-      
-    }*/
     this.dataSource[parentindexOfItem].list[indexOfItem].selectedVariation = selectedValue;
     this.dataSource[parentindexOfItem].list[indexOfItem].selectedVariationPrice = selectedValuePrice;
+    
+  }
+  onVariationSelectDropdown(selectedValue : any, indexOfItem : any, parentindexOfItem : any) {
+
+    if(selectedValue.target.options.selectedIndex == 0){
+      this.dataSource[parentindexOfItem].list[indexOfItem].selectedVariationPrice = this.dataSource[parentindexOfItem].list[indexOfItem].price1
+    }
+    if(selectedValue.target.options.selectedIndex == 1){
+      this.dataSource[parentindexOfItem].list[indexOfItem].selectedVariationPrice = this.dataSource[parentindexOfItem].list[indexOfItem].price2
+    }
+    if(selectedValue.target.options.selectedIndex == 2){
+      this.dataSource[parentindexOfItem].list[indexOfItem].selectedVariationPrice = this.dataSource[parentindexOfItem].list[indexOfItem].price3
+    }
+    this.dataSource[parentindexOfItem].list[indexOfItem].selectedVariation = selectedValue.target.value;
     
   }
 
